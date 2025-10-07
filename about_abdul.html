@@ -44,13 +44,17 @@
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         }
-        .card-header, .table thead th {
+        .card-header {
         background-color: #124170;
         color: white;
         border-bottom: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        }
+        .header-title-wrapper {
+        flex-grow: 1;
+        text-align: center;
         }
     </style>
 </head>
@@ -61,7 +65,10 @@
                 <div class="card mb-4 text-center shadow-sm">
                     <div class="card-header">
                         <a href="index.html" class="btn btn-light btn-sm">&leftarrow; Kembali</a>
-                            <h1 class="my-2 fs-4 fs-md-2">PROFIL SAYA</h1>
+                            <div class="header-title-wrapper">
+                                <h1 class="my-2 fs-4 fs-md-2">PROFIL SAYA</h1>
+                            </div>
+                            <div style="width: 95px;"></div> 
                         </div>
                     <div class="card-body p-4">
                         <img src="/dok/Foto Anggota/Abdul.jpg" alt="Foto Ahmad Abdullah Aswad" class="img-fluid rounded-circle mx-auto mb-3 profile-img">
@@ -178,5 +185,6 @@
 </body>
 
 </html>
+
 
 
