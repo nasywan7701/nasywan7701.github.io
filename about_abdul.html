@@ -44,15 +44,23 @@
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         }
+        .card-header, .table thead th {
+        background-color: #124170;
+        color: white;
+        border-bottom: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
     </style>
 </head>
 <body>
     <div class="container my-3 my-md-5">
-        <a href="index.html" class="btn btn-primary mb-3">&leftarrow; Kembali</a>
-            <div class="row justify-content-center">
-                <div class="col-lg-10 col-md-12">
-                    <div class="card mb-4 text-center shadow-sm">
-                        <div class="card-header">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-12">
+                <div class="card mb-4 text-center shadow-sm">
+                    <div class="card-header">
+                        <a href="index.html" class="btn btn-light btn-sm">&leftarrow; Kembali</a>
                             <h1 class="my-2 fs-4 fs-md-2">PROFIL SAYA</h1>
                         </div>
                     <div class="card-body p-4">
@@ -170,4 +178,5 @@
 </body>
 
 </html>
+
 
