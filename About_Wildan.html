@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Wildan Muafan - PTIK C 24</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+        
+        .container {
+            max-width: 1000px;
+        }
+        
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .card-header {
+            border-radius: 15px 15px 0 0 !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .profile-img {
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05) rotate(3deg);
+        }
+        
+        .badge-custom {
+            font-size: 0.9rem;
+            padding: 8px 15px;
+            margin: 5px;
+        }
+        
+        .table {
+            background: white;
+        }
+        
+        .table thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .list-group-item {
+            border-left: 4px solid #667eea;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .list-group-item:hover {
+            background-color: #f8f9fa;
+            border-left-color: #764ba2;
+            transform: translateX(5px);
+        }
+        
+        .motto-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #667eea, #764ba2);
+        }
+        
+        .info-row {
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: background 0.3s ease;
+        }
+        
+        .info-row:hover {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card fade-in bg-gradient text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div class="card-body text-center py-5">
+                <h1 class="display-4 mb-3"> Profil Mahasiswa</h1>
+                <p class="lead">Program Studi Pendidikan Teknologi Informasi dan Komputer</p>
+            </div>
+        </div>
+
+        <div class="card fade-in">
+            <div class="card-header bg-primary text-white">
+                <i></i> Pengenalan Diri
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="info-row">
+                            <strong class="text-primary">Nama:</strong> 
+                            <span class="ms-2">Wildan Muafan</span>
+                        </div>
+                        <div class="info-row">
+                            <strong class="text-primary">NIM:</strong> 
+                            <span class="ms-2 badge bg-info">240209501041</span>
+                        </div>
+                        <div class="info-row">
+                            <strong class="text-primary">Kelas:</strong> 
+                            <span class="ms-2 badge bg-success">PTIK C 24</span>
+                        </div>
+                        <div class="info-row">
+                            <strong class="text-primary">Alamat Rumah:</strong> 
+                            <span class="ms-2"><del>Jl. Gotong royong</del></span>
+                        </div>
+                        <div class="info-row">
+                            <strong class="text-primary">Alamat Sekarang:</strong> 
+                            <span class="ms-2"> Jl. Timbusseng</span>
+                        </div>
+                        <div class="info-row">
+                            <strong class="text-primary">Asal Sekolah:</strong> 
+                            <span class="ms-2"> SMA Negeri 6 Sinjai</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="foto.jpg" class="profile-img img-fluid" width="200" alt="Foto Wildan">
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong class="text-primary d-block mb-2">Motto Hidup:</strong>
+                    <div class="motto-box">
+                        <q>Bersama kita kuat</q> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card fade-in">
+            <div class="card-header bg-success text-white">
+                <i>Pengalaman Setelah Satu Tahun Kuliah di PTIK </i> 
+            </div>
+            <div class="card-body">
+                <div class="accordion" id="experienceAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#semester1">
+                                <strong> Semester 1 - Perkenalan Awal</strong>
+                            </button>
+                        </h2>
+                        <div id="semester1" class="accordion-collapse collapse show" data-bs-parent="#experienceAccordion">
+                            <div class="accordion-body">
+                                <p>Di semester pertama perkuliahan dimulai dengan banyaknya mata kuliah yang online yang membuat saya tidak terlalu mengenal teman-teman yang sekelas dengan saya. Saya hanya kenal beberapa itupun lewat tugas yang dikerjakan secara berkelompok dan saat pertama kali bertemu dengan mereka rasanya canggung karena kita memang belum saling mengenal dan kita kebanyakan diam saja tetapi seiring dengan berjalannya waktu dan banyaknya tugas kelompok yang membuat kami menjadi lebih mengenal satu sama lain ditambah dengan adanya matkul yang memberikan tugas turun ke lapangan secara berkelompok yang membuat kita menjadi saling lebih mengenal lagi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#semester2">
+                                <strong> Semester 2 - Kebersamaan & Tantangan</strong>
+                            </button>
+                        </h2>
+                        <div id="semester2" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                            <div class="accordion-body">
+                                <p>Di semester dua perkuliahan sudah banyak yang mulai offline, mungkin sudah kebanyakan yang offline. Disinilah kami mulai mengenal satu sama lain, kita juga kadang makan bersama dan mengerjakan tugas bersama yang membuat kita lebih dekat. Terkadang juga kita sering bermain game bersama yang membuat kita lebih akrab lagi. Di semester ini juga tugas sudah lumayan banyak dengan deadline yang saling mendekati sehingga membuat kita agak kewalahan dan membuat kita tidur tengah malam demi menyelesaikan tugas tersebut.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card fade-in">
+            <div class="card-header bg-warning text-dark">
+                <i> Mata Kuliah Favorit </i>
+            </div>
+            <div class="card-body">
+                <div class="list-group list-group-flush">
+                    <div class="list-group-item">
+                        <span class="badge bg-primary badge-custom">1</span>
+                         Komunikasi Data
+                    </div>
+                    <div class="list-group-item">
+                        <span class="badge bg-primary badge-custom">2</span>
+                         Basis Data
+                    </div>
+                    <div class="list-group-item">
+                        <span class="badge bg-primary badge-custom">3</span>
+                         Komputer Grafis
+                    </div>
+                    <div class="list-group-item">
+                        <span class="badge bg-primary badge-custom">4</span>
+                         Elektronika Analog dan Digital
+                    </div>
+                    <div class="list-group-item">
+                        <span class="badge bg-primary badge-custom">5</span>
+                         Algoritma dan Pemrograman Dasar
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card fade-in">
+            <div class="card-header bg-info text-white">
+                <i> Daftar Dosen </i>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item">▪ Dr. Hj. Lu'mu, M.Pd</li>
+                            <li class="list-group-item">▪ Dwi Rezky Anandari S., S.Psi., M.Si</li>
+                            <li class="list-group-item">▪ Shabrina Syntha Dewi, S.Pd., M.Pd</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item">▪ Zulhajji, S.T., M.T.</li>
+                            <li class="list-group-item">▪ M. Miftach Fakhri, S.Kom., M.Pd.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card fade-in">
+            <div class="card-header bg-danger text-white">
+                <i> Anggota Kelompok Pemrograman Web </i>
+            </div>
+            <div class="card-body">
+                <p class="lead">Berikut adalah data anggota kelompok pemrograman web:</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th rowspan="2" class="align-middle text-center">No</th>
+                                <th colspan="2" class="text-center">Nama</th>
+                                <th rowspan="2" class="align-middle text-center">Jenis Kelamin</th>
+                                <th rowspan="2" class="align-middle text-center">Alamat</th>
+                                <th rowspan="2" class="align-middle text-center">Asal Sekolah</th>
+                            </tr>
+                            <tr>
+                                <th class="text-center">Lengkap</th>
+                                <th class="text-center">Panggilan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>James Baco</td>
+                                <td><span class="badge bg-secondary">Aco</span></td>
+                                <td class="text-center">♂ Laki-laki</td>
+                                <td>Sinjai</td>
+                                <td>SMAN 6 Sinjai</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td>Olivia Bacce</td>
+                                <td><span class="badge bg-secondary">Ace</span></td>
+                                <td class="text-center">♀ Perempuan</td>
+                                <td>Sinjai</td>
+                                <td>SMAN 6 Sinjai</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td>Alexander Tono</td>
+                                <td><span class="badge bg-secondary">Tono</span></td>
+                                <td class="text-center">♂ Laki-laki</td>
+                                <td>Sinjai</td>
+                                <td>SMAN 6 Sinjai</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card fade-in bg-dark text-white">
+            <div class="card-body text-center">
+                <p class="mb-0">© 2024 Wildan Muafan - PTIK C 24 | Universitas Negeri Makassar</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
