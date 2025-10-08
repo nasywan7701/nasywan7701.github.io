@@ -104,6 +104,49 @@
         </div>
     </footer>
 
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#contactForm").validate({
+                rules: {
+                    nama: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    subjek: {
+                        required: true
+                    },
+                    pesan: {
+                        required: true
+                    }
+                },
+                messages: {
+                    nama: {
+                        required: "Silakan masukkan nama lengkap Anda"
+                    },
+                    email: {
+                        required: "Silakan masukkan alamat email Anda",
+                        email: "Format email yang Anda masukkan tidak valid"
+                    },
+                    subjek: {
+                        required: "Silakan masukkan subjek pesan"
+                    },
+                    pesan: {
+                        required: "Silakan tulis pesan Anda"
+                    }
+                },
+                submitHandler: function(form) {
+                    alert("Terima kasih! Pesan Anda telah terkirim.");
+                    form.submit();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
