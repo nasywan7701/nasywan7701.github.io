@@ -20,6 +20,10 @@
         .custom-navbar .nav-link:hover {
             color: #0d6efd;
         }
+        .error {
+            color: #dc3545;
+            font-size: 0.875em;
+        }
     </style>
 </head>
 <body>
@@ -85,9 +89,29 @@
                         </li>
                     </ul>
                     </div>
+                <div class="col-lg-7">
+                    <h3 class="fw-bold mb-4">Kirim Pesan</h3>
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="nama" name="nama" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Alamat Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subjek" class="form-label">Subjek</label>
+                            <input type="text" class="form-control" id="subjek" name="subjek" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="pesan" name="pesan" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-2">Kirim Pesan</button>
+                    </form>
                 </div>
             </div>
-        </div>
     </main>
 
     <footer class="bg-dark text-white py-5">
