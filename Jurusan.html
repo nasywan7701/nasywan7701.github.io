@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daftar Jurusan - SMKN 1 Takalar</title>
+  <title>Jurusan - SMKN 1 Takalar</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -14,14 +14,46 @@
       color: #213757;
       font-weight: bold;
     }
+    .navbar {
+      background-color: #213757;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+      font-weight: 500;
+    }
     .accordion-button {
       font-weight: bold;
+    }
+    footer {
+      background-color: #213757;
+      color: white;
+      padding: 20px 0;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">SMKN 1 Takalar</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="jurusan.html">Jurusan</a></li>
+          <li class="nav-item"><a class="nav-link" href="ekskul.html">Ekstrakurikuler</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <div class="container my-5">
-    <h1 class="text-center mb-4">Daftar Jurusan yang ada di SMK Negeri 1 Takalar</h1>
+    <h1 class="text-center mb-4">Daftar Jurusan di SMKN 1 Takalar</h1>
 
     <div class="accordion" id="jurusanAccordion">
 
@@ -33,8 +65,8 @@
         </h2>
         <div id="collapseNKPI" class="accordion-collapse collapse" aria-labelledby="headingNKPI" data-bs-parent="#jurusanAccordion">
           <div class="accordion-body">
-            <p>NKPI merupakan kepanjangan dari Nautika Kapal Penangkap Ikan. Jurusan ini merupakan jurusan yang banyak menghabiskan waktu di laut, karena tujuan dari jurusan ini adalah membentuk peserta didik untuk mampu menjadi perwira deck di kapal penangkap ikan, nakhoda kapal, serta ahli dalam melakukan navigasi pelayaran.</p>
-            <p>Siswa akan dibekali dengan kemampuan dalam mengoperasikan alat navigasi, menentukan posisi kapal, membaca peta laut, hingga memahami peraturan internasional tentang keselamatan di laut (SOLAS). Selain itu, siswa juga diajarkan mengenai teknik penangkapan ikan yang ramah lingkungan dan modern.</p>
+            <p>NKPI merupakan kepanjangan dari Nautika Kapal Penangkap Ikan, masyarakat sekitar sekolah menyebutnya jurusan pelayaran. Jurusan ini membekali siswa dengan ilmu kemaritiman, teknik navigasi, dan pengoperasian kapal.</p>
+            <p>Lulusan NKPI banyak terserap di dunia kerja sebagai pelaut, bekerja di kapal niaga maupun kapal ikan, bahkan banyak yang menjadi TNI, POLRI, atau melanjutkan ke perguruan tinggi.</p>
             <img src="/dok/Sekolah/Screenshot 2025-09-21 160443.png" class="img-fluid rounded shadow">
           </div>
         </div>
@@ -48,8 +80,8 @@
         </h2>
         <div id="collapseAPAT" class="accordion-collapse collapse" aria-labelledby="headingAPAT" data-bs-parent="#jurusanAccordion">
           <div class="accordion-body">
-            <p>APAT adalah jurusan yang mempelajari bagaimana mengelola bisnis perikanan, khususnya pada budidaya air tawar. Siswa dipersiapkan untuk mampu menguasai teknik budidaya ikan, mulai dari pembenihan, pemeliharaan, pengolahan hasil, hingga pemasaran.</p>
-            <p>Selain itu, siswa juga mendapatkan keterampilan dalam mengelola kolam, pakan ikan, hingga teknologi perikanan modern. Lulusan jurusan ini banyak dibutuhkan di sektor perikanan, pembenihan ikan, usaha agribisnis, hingga wirausaha mandiri di bidang perikanan.</p>
+            <p>APAT adalah jurusan yang mempelajari pengelolaan bisnis perikanan air tawar, mulai dari pembenihan, pemeliharaan, pengolahan hasil, hingga pemasaran.</p>
+            <p>Lulusan memiliki peluang besar menjadi wirausaha, bekerja sama dengan industri perikanan, atau melanjutkan studi ke perguruan tinggi.</p>
             <img src="/dok/Sekolah/Screenshot 2025-09-21 161324.png" class="img-fluid rounded shadow">
           </div>
         </div>
@@ -63,8 +95,8 @@
         </h2>
         <div id="collapseTJKT" class="accordion-collapse collapse" aria-labelledby="headingTJKT" data-bs-parent="#jurusanAccordion">
           <div class="accordion-body">
-            <p>Jurusan TJKT membekali peserta didik dengan kompetensi instalasi jaringan komputer, pemrograman dasar, administrasi server, serta pemeliharaan perangkat keras dan lunak komputer. Siswa juga mempelajari tentang sistem komunikasi data, jaringan nirkabel, hingga teknologi internet.</p>
-            <p>Lulusan jurusan TJKT dapat bekerja sebagai teknisi komputer, administrator jaringan, teknisi telekomunikasi, atau bahkan wirausaha di bidang IT.</p>
+            <p>TJKT membekali siswa dengan kompetensi dalam instalasi jaringan lokal dan global, sistem operasi, aplikasi, serta administrasi jaringan.</p>
+            <p>Lulusan diharapkan menjadi staf IT profesional di bidang teknik komputer dan jaringan.</p>
             <img src="/dok/Sekolah/Screenshot 2025-09-24 183652.png" class="img-fluid rounded shadow">
           </div>
         </div>
@@ -78,8 +110,8 @@
         </h2>
         <div id="collapseTKRO" class="accordion-collapse collapse" aria-labelledby="headingTKRO" data-bs-parent="#jurusanAccordion">
           <div class="accordion-body">
-            <p>TKRO adalah jurusan otomotif yang fokus pada kendaraan roda 4. Peserta didik diajarkan tentang perawatan mesin, sistem kelistrikan, sistem pemindah tenaga, sistem rem, hingga teknologi otomotif terbaru.</p>
-            <p>Lulusan TKRO dapat bekerja sebagai mekanik mobil, teknisi bengkel resmi, hingga membuka usaha bengkel sendiri.</p>
+            <p>TKRO fokus pada kompetensi perawatan kendaraan roda empat, baik mesin bensin maupun diesel. Jurusan ini relevan dengan meningkatnya jumlah kendaraan.</p>
+            <p>Lulusan bisa bekerja di bengkel otomotif, industri, membuka usaha sendiri, atau melanjutkan ke perguruan tinggi.</p>
             <img src="/dok/Sekolah/Screenshot 2025-09-24 185932.png" class="img-fluid rounded shadow">
           </div>
         </div>
@@ -93,8 +125,8 @@
         </h2>
         <div id="collapseTBSM" class="accordion-collapse collapse" aria-labelledby="headingTBSM" data-bs-parent="#jurusanAccordion">
           <div class="accordion-body">
-            <p>TBSM fokus pada perawatan dan perbaikan sepeda motor. Peserta didik diajarkan mulai dari mesin, sistem kelistrikan, rangka, hingga teknologi injeksi.</p>
-            <p>Selain itu, siswa juga dibekali kemampuan bisnis, sehingga lulusan bisa bekerja di bengkel resmi, bengkel umum, maupun membuka usaha bengkel sendiri.</p>
+            <p>TBSM membekali siswa dengan kemampuan perawatan dan perbaikan sepeda motor. Kompetensi meliputi mesin, kelistrikan, dan bisnis bengkel.</p>
+            <p>Lulusan dapat bekerja di industri otomotif roda dua, membuka usaha, atau melanjutkan studi.</p>
             <img src="/dok/Sekolah/Screenshot 2025-09-24 190520.png" class="img-fluid rounded shadow">
           </div>
         </div>
@@ -108,8 +140,8 @@
         </h2>
         <div id="collapseDPIB" class="accordion-collapse collapse" aria-labelledby="headingDPIB" data-bs-parent="#jurusanAccordion">
           <div class="accordion-body">
-            <p>DPIB adalah jurusan arsitektur yang mempelajari perencanaan, desain, serta pemodelan bangunan. Peserta didik dilatih menggunakan perangkat lunak desain arsitektur (CAD), membaca gambar teknik, hingga membuat rancangan bangunan.</p>
-            <p>Lulusan dapat bekerja di bidang konstruksi, arsitektur, konsultan bangunan, atau melanjutkan ke perguruan tinggi.</p>
+            <p>DPIB mempelajari perencanaan, desain, dan gambar bangunan rumah, gedung, serta interior. Juga termasuk perhitungan anggaran biaya dan penguasaan ilmu ukur tanah.</p>
+            <p>Lulusan banyak dibutuhkan di bidang kontraktor, konsultan, maupun industri properti.</p>
             <img src="/dok/Sekolah/Screenshot 2025-09-24 192201.png" class="img-fluid rounded shadow">
           </div>
         </div>
@@ -123,8 +155,8 @@
         </h2>
         <div id="collapseKEP" class="accordion-collapse collapse" aria-labelledby="headingKEP" data-bs-parent="#jurusanAccordion">
           <div class="accordion-body">
-            <p>Jurusan Asisten Keperawatan menghasilkan tenaga ahli di bidang pelayanan dasar kesehatan. Peserta didik dibekali keterampilan pemeriksaan dasar, perawatan pasien, administrasi kesehatan, hingga praktik kerja lapangan di rumah sakit dan puskesmas.</p>
-            <p>Lulusan bisa bekerja sebagai tenaga kesehatan, melanjutkan kuliah di bidang keperawatan, atau membuka layanan kesehatan mandiri.</p>
+            <p>Jurusan Asisten Keperawatan bertujuan menghasilkan tenaga ahli dalam pelayanan dasar keperawatan, khususnya pemenuhan kebutuhan dasar manusia.</p>
+            <p>Lulusan dapat bekerja di bidang kesehatan, menjadi tenaga penolong pertama, melanjutkan ke perguruan tinggi kesehatan, atau bergabung dengan TNI/Polri di bidang kesehatan.</p>
             <img src="/dok/Sekolah/Screenshot 2025-09-24 192332.png" class="img-fluid rounded shadow">
           </div>
         </div>
@@ -138,8 +170,8 @@
         </h2>
         <div id="collapsePHL" class="accordion-collapse collapse" aria-labelledby="headingPHL" data-bs-parent="#jurusanAccordion">
           <div class="accordion-body">
-            <p>Jurusan Perhotelan fokus pada kompetensi akomodasi, tata boga, tata hidang, serta pelayanan tamu. Peserta didik diajarkan standar pelayanan internasional, manajemen hotel, hingga praktik kerja di hotel berbintang.</p>
-            <p>Lulusan dapat bekerja di industri perhotelan, kapal pesiar, restoran, atau membuka usaha di bidang hospitality.</p>
+            <p>Jurusan Perhotelan mempelajari kompetensi pengelolaan akomodasi, tata boga, tata hidang, dan hospitality. Pendidikan berbasis industri perhotelan modern.</p>
+            <p>Lulusan berpeluang bekerja di hotel berbintang dalam maupun luar negeri, atau melanjutkan studi di bidang pariwisata.</p>
             <img src="/dok/Sekolah/Screenshot 2025-09-24 193234.png" class="img-fluid rounded shadow">
           </div>
         </div>
@@ -151,6 +183,14 @@
       <a href="index.html" class="btn btn-secondary">Kembali</a>
     </div>
   </div>
+
+  <footer>
+    <div class="container text-center">
+      <p class="fw-bold fs-5">SMK Negeri 1 Takalar</p>
+      <p class="text-white-50">Jl. Karaeng Salamaka No. 1, Desa Boddia, Kec. Galesong, Kab. Takalar, Sulawesi Selatan</p>
+      <p class="text-white-50 small">© 2025 SMK Negeri 1 Takalar. Kelompok 2</p>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
